@@ -2,7 +2,10 @@ module Main where
 
 import Foreign.C.Types
 
-import HsExport
+-- if I include the following line then linking works
+-- import HsExport
+
+import ExportLib
 
 foreign import ccall safe "cxx.h CallCxx"
     callCxx::CInt-> IO(CInt)
