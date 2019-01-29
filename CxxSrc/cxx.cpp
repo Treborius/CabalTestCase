@@ -4,7 +4,7 @@
 
 
 int CallCxx(int port) {
-    std::cout << "called from haskell" << std::endl;
+    std::cout << "called from haskell" << port << std::endl;
     return 10;
 }
 
